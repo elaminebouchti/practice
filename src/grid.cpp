@@ -9,5 +9,5 @@ int Grid::width() const{
 }
 
 bool Grid::in_bounds(int x, int y) const{
-    return (0 <= x && x <= width_) && (0 <= y && y <= height_);
+    return (0 <= x && x < width_) && (0 <= y && y < height_);
 }
