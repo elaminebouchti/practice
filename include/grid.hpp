@@ -2,22 +2,16 @@
 
 class Grid{
     public:
-    Grid(int width, int hight): width_(width), hight_(hight){}
+    Grid(int width, int height): width_(width), height_(height){}
 
-    bool in_bounds(int x, int y) const{
-        return (0 < x && x < width_) && (0 < y && y < hight_);
-    }
+    bool in_bounds(int x, int y) const;
 
-    int width() const{
-        return width_;
-    }
+    int width() const;
 
-    int hight() const{
-        return hight_;
-    }
+    int height() const;
 
     private:
     int width_;
-    int hight_;
+    int height_;
 
 };
